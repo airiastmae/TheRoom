@@ -4,10 +4,11 @@ import Box from './components/Box.js'
 import Wall from './components/Wall.js'
 import Floor from './components/Floor.js'
 import Ceiling from './components/Ceiling.js'
+import Rig from "./components/Rig.js";
 
 new Vue({
     el: '#app',
-    components: { Layout, Scene, Box, Wall, Floor, Ceiling },
+    components: { Layout, Scene, Box, Wall, Floor, Ceiling, Rig },
     template: `
     <Layout>
       <Scene>
@@ -15,9 +16,21 @@ new Vue({
           <a-assets>
             <a-asset-item id="chandelier" src="./assets/models/Artichoke_Lamp.obj"></a-asset-item>
             <a-asset-item id="chandelier-mtl" src="./assets/models/Artichoke_Lamp.mtl"></a-asset-item>
+
+            <a-asset-item id="jubin" src="./assets/models/asimaterial.obj"></a-asset-item>
+            <a-asset-item id="jubin-mtl" src="./assets/models/asimaterial.mtl"></a-asset-item>
           
             </a-assets>
         </template>
+
+        <a-entity class="jubin" obj-model="obj. #jubin; mtl: #jubin-mtl "></a-entity>
+
+        <Rig>
+          <!-- Rig-i sisse võib panna asju, mis peaks liikuma koos kaameraga, märksõna HUD -->
+          <!-- Hetkel on siin tekstid, mis muutuvad nähtavaks, kui vaatad õige asja peale -->
+          <a-text id="kuubikutekst" value="see on kuubik" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
+          <a-text id="plakatitekst" value="see on notsu" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
+        </Rig>
         
         <Ceiling class="ceiling" position="0 4 0"/>
         <a-entity material="color: white; emissive: yellow; emissiveIntensity: 1" class="chandelier" 
@@ -27,11 +40,32 @@ new Vue({
         
         </Ceiling>
         
-      	<Wall position="0 0 -5"/>
+        <Wall position="0 0 -5">
+          <!-- seina komponenti on muudetud nii, et tema 'sisse' saab panna asju, mis peaks ta peal rippuma, vaikimisi täpselt keskel -->
+          <!-- allpoolse a-plane-i küljes on evendid e. sündmused, mis muudavad selle peale vaadates õige teksti nähtavaks (ja ka nähtamatuks) -->
+          <a-plane 
+              class="hover" scale="2 3 0"
+               material="src: ./assets/images/notsu.jpg"
+
+              event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
+              event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
+
+          ></a-plane>
+          <a-plane 
+              position:" -2 0 0"
+              class="hover" scale="2 3 0"
+               material="src: ./assets/images/plakat.jpg"
+
+              
+
+          ></a-plane>
+        </Wall>
       	<Wall position="-5 0 0" rotation="0 90 0"/>
       	<Wall position="0 0 5" rotation="0 180 0"/>
         <Wall position="5 0 0" rotation="0 -90 0"/>
-        <Box position="1 1 0" shadow="cast: true" />
+        <Box position="1 1 0" shadow="cast: true" 
+        
+        />
         <Floor />
         
       </Scene>

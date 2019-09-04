@@ -1,7 +1,7 @@
 export default {
 	// x-vasakparem y-ylesalla z-kaugemale l2hemale? koordinaadid
     template: `
-        <a-scene shadow="type: pcfsoft">
+        <a-scene>
         <slot name="assets" />
             
         	<a-entity position="0 0 -4" >
