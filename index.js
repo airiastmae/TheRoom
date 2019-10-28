@@ -35,6 +35,7 @@ new Vue({
           <!-- Hetkel on siin tekstid, mis muutuvad nähtavaks, kui vaatad õige asja peale -->
           <a-text id="plakatitekst" value="Koopiamaal 'Affirmation II', akryyl" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
           <a-text id="primary" value="Natyyrmort, primaarid+valge akryyl" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
+          <a-text id="sienna" value="Natyyrmort, ultramariin+burnt sienna" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
         </Rig>
         
         <Ceiling class="ceiling" position="0 4 0"/>
@@ -49,31 +50,48 @@ new Vue({
           <!-- seina komponenti on muudetud nii, et tema 'sisse' saab panna asju, mis peaks ta peal rippuma, vaikimisi täpselt keskel -->
           <!-- allpoolse a-plane-i küljes on evendid e. sündmused, mis muudavad selle peale vaadates õige teksti nähtavaks (ja ka nähtamatuks) -->
           <a-plane 
-              class="hover" scale="2 3 0"
+              class="hover" position="0 0 0" scale="2 3 0"
                material="src: ./assets/images/koopiamaal.jpg"
 
               event-set__enter="_event: mouseenter; _target: #plakatitekst; visible: true"
               event-set__leave="_event: mouseleave; _target: #plakatitekst; visible: false"
 
           ></a-plane>
-          
-        </Wall>
-      	<Wall position="-5 0 0" rotation="0 90 0">
-        <a-plane 
-              class="hover" scale="2 3 0"
+          <a-plane 
+              class="hover" position="2.5 0 0" scale="2 2 0"
                material="src: ./assets/images/primaarid.jpg"
 
               event-set__enter="_event: mouseenter; _target: #primary; visible: true"
               event-set__leave="_event: mouseleave; _target: #primary; visible: false"
 
-          ></a-plane></Wall>
+          ></a-plane>
+          <a-plane 
+              class="hover" position="-2.5 0 0" scale="2 3 0"
+               material="src: ./assets/images/ultramariinburntsienna.jpg"
+
+              event-set__enter="_event: mouseenter; _target: #sienna; visible: true"
+              event-set__leave="_event: mouseleave; _target: #sienna; visible: false"
+
+          ></a-plane>
+          
+        </Wall>
+      	<Wall position="-5 0 0" rotation="0 90 0">
+        <a-plane 
+              class="hover" position="-2.5 0 0" scale="2 3 0"
+               material="src: ./assets/images/ultramariinburntsienna.jpg"
+
+              event-set__enter="_event: mouseenter; _target: #sienna; visible: true"
+              event-set__leave="_event: mouseleave; _target: #sienna; visible: false"
+
+          ></a-plane> 
+        </Wall>
       	<Wall position="0 0 5" rotation="0 180 0"/>
         <Wall position="5 0 0" rotation="0 -90 0"/>
         <Box position="1 1 0" shadow="cast: true" 
         
         />
-        <Floor position="0 0.1 0" />
-        <a-entity environment="preset: starry; groundColor: black; grid: none; dressing: mushrooms; dressingColor: black; fog: 0.5;"></a-entity>
+        <Floor position="0 0.01 0" />
+        <a-entity environment="preset: starry; groundColor: black; grid: none; dressing: mushrooms; dressingColor: black; dressingVariance: 3 7 15; fog: 0.5;"></a-entity>
       </Scene>
     </Layout>
     `,
