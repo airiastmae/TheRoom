@@ -1,0 +1,48 @@
+
+newmtl 0.BaseMaterial
+Kd  01 01 01
+Ks  0.2 0.2 0.2
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+map_Kd woodpaint1.png
+
+
+
+
+newmtl 1.BaseMaterial
+Kd  01 01 01
+Ks  0.2 0.2 0.2
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+map_Kd canvaswhite.png
+
+
+
+
+newmtl 2.BaseMaterial
+Kd  01 01 01
+Ks  0.2 0.2 0.2
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+map_Kd woodpaint3.png
+
+
+
+
+newmtl 3.BaseMaterial
+Kd  01 01 01
+Ks  0.2 0.2 0.2
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+map_Kd canvas1.png
+
+
+
