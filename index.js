@@ -21,13 +21,15 @@ new Vue({
 
             <a-asset-item id="easel" src="./assets/models/easel.obj"></a-asset-item>
             <a-asset-item id="easel-mtl" src="./assets/models/easel.mtl"></a-asset-item>
-          
+                  
             </a-assets>
         </template>
 
-        <a-entity scale="0.5 0.5 0.5" position="0 0.5 0" class="flubber" obj-model="obj: #flubber; mtl: #flubber-mtl ">
+        <a-entity scale="0.5 0.5 0.5" position="0 0.5 0" material="transparent: true; metalness: 1" class="flubber" obj-model="obj: #flubber; mtl: #flubber-mtl ">
         
         </a-entity>
+
+        
         <!--<a-entity scale="5 5 5" class="easel" obj-model="obj: #easel; mtl: #easel-mtl "></a-entity> see ei t55ta-->
         
 
@@ -57,6 +59,8 @@ new Vue({
           <a-text id="flint" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
           <a-text id="hunt" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
           <a-text id="reko" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
+          <a-text id="v2lk" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
+          <a-text id="stef" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
           
         </Rig>
         
@@ -103,14 +107,14 @@ new Vue({
               event-set__leave="_event: mouseleave; _target: #punane; visible: false"
 
           ></a-plane>
-          <a-plane 
+          <!--<a-plane 
               class="hover" position="-7.5 0 0" scale="2 3 0"
                material="src: ./assets/images/sinisemonokroom.jpg"
 
               event-set__enter="_event: mouseenter; _target: #sinine; visible: true"
               event-set__leave="_event: mouseleave; _target: #sinine; visible: false"
 
-          ></a-plane>
+          ></a-plane>-->
           <a-plane 
               class="hover" position="5 0 0" scale="2 1.5 0"
                material="src: ./assets/images/visand.jpg"
@@ -131,7 +135,7 @@ new Vue({
         </Wall>
       	<Wall position="-10 0 4.985" rotation="0 90 0">
         <a-plane 
-              class="hover" position="7 0 0" scale="2 2.5 0"
+              class="hover" position="8 0 0" scale="2 2.5 0"
                material="src: ./assets/images/initsiaal.jpg"
 
               event-set__enter="_event: mouseenter; _target: #ini; visible: true"
@@ -139,7 +143,7 @@ new Vue({
 
           ></a-plane> 
           <a-plane 
-              class="hover" position="4 0 0" scale="3 2 0"
+              class="hover" position="5 0 0" scale="3 2 0"
                material="src: ./assets/images/tintenpen.jpg"
 
               event-set__enter="_event: mouseenter; _target: #tint; visible: true"
@@ -147,7 +151,7 @@ new Vue({
 
           ></a-plane> 
           <a-plane 
-              class="hover" position="0.5 0 0" scale="3 2 0"
+              class="hover" position="1.5 0 0" scale="3 2 0"
                material="src: ./assets/images/kuju.jpg"
 
               event-set__enter="_event: mouseenter; _target: #kuju; visible: true"
@@ -155,7 +159,7 @@ new Vue({
 
           ></a-plane> 
           <a-plane 
-              class="hover" position="-2.5 0 0" scale="2.5 2 0"
+              class="hover" position="-1.5 0 0" scale="2.5 2 0"
                material="src: ./assets/images/1_halliskaala_tont.jpg"
 
               event-set__enter="_event: mouseenter; _target: #tont; visible: true"
@@ -163,7 +167,7 @@ new Vue({
 
           ></a-plane> 
           <a-plane 
-              class="hover" position="-5 0 0" scale="2 3 0"
+              class="hover" position="-4 0 0" scale="2 3 0"
                material="src: ./assets/images/2_monokromaatiline_aprikoos.jpg"
 
               event-set__enter="_event: mouseenter; _target: #apr; visible: true"
@@ -171,7 +175,7 @@ new Vue({
 
           ></a-plane> 
           <a-plane 
-              class="hover" position="-7.5 0 0" scale="2 3 0"
+              class="hover" position="-6.5 0 0" scale="2 3 0"
                material="src: ./assets/images/3_analoog_jimmy.jpg"
 
               event-set__enter="_event: mouseenter; _target: #jim; visible: true"
@@ -182,7 +186,7 @@ new Vue({
 
       	<Wall position="0 0 14.6" rotation="0 180 0">
         <a-plane 
-              class="hover" position="7.5 0 0" scale="3 2 0"
+              class="hover" position="8 0 0" scale="3 2 0"
                material="src: ./assets/images/4_kolmikharmoonia_semu.jpg"
 
               event-set__enter="_event: mouseenter; _target: #semu; visible: true"
@@ -190,7 +194,7 @@ new Vue({
 
           ></a-plane>
           <a-plane 
-              class="hover" position="4 0 0" scale="2 3 0"
+              class="hover" position="5 0 0" scale="2 3 0"
                material="src: ./assets/images/5_vastandharmoonia_flint.jpg"
 
               event-set__enter="_event: mouseenter; _target: #flint; visible: true"
@@ -198,7 +202,7 @@ new Vue({
 
           ></a-plane>
           <a-plane 
-              class="hover" position="1 0 0" scale="3 2 0"
+              class="hover" position="2 0 0" scale="3 2 0"
                material="src: ./assets/images/6_jagunevadvastandid_hundu.jpg"
 
               event-set__enter="_event: mouseenter; _target: #hunt; visible: true"
@@ -206,7 +210,7 @@ new Vue({
 
           ></a-plane>
           <a-plane 
-              class="hover" position="-2.5 0 0" scale="3 2 0"
+              class="hover" position="-1.5 0 0" scale="3 2 0"
                material="src: ./assets/images/7_nelikharmoonia_rambo.jpg"
 
               event-set__enter="_event: mouseenter; _target: #rambo; visible: true"
@@ -214,13 +218,30 @@ new Vue({
 
           ></a-plane>
           <a-plane 
-              class="hover" position="-5 0 0" scale="2 3 0"
+              class="hover" position="-4.5 0 0" scale="2 3 0"
                material="src: ./assets/images/8_temperatuurikontrast_reko.jpg"
 
               event-set__enter="_event: mouseenter; _target: #reko; visible: true"
               event-set__leave="_event: mouseleave; _target: #reko; visible: false"
 
           ></a-plane>
+
+          <a-plane 
+              class="hover" position="-7 0 0" scale="2 3 0"
+               material="src: ./assets/images/9_kromaatilinekontrast_v2lk.jpg"
+
+              event-set__enter="_event: mouseenter; _target: #v2lk; visible: true"
+              event-set__leave="_event: mouseleave; _target: #v2lk; visible: false"
+
+          ></a-plane>
+          <!--<a-plane 
+              class="hover" position="-9 0 0" scale="2 3 0"
+               material="src: ./assets/images/10_heletumedusekontrast_steffi.jpg"
+
+              event-set__enter="_event: mouseenter; _target: #stef; visible: true"
+              event-set__leave="_event: mouseleave; _target: #stef; visible: false"
+
+          ></a-plane>-->
         </Wall>
 
         <Wall position="10 0 4.7" rotation="0 -90 0">
@@ -266,10 +287,10 @@ new Vue({
           ></a-plane>
           <a-plane 
               class="hover" position="7 0 0" scale="2 3 0"
-               material="src: ./assets/images/vildikas.jpg"
+               material="src: ./assets/images/10_heletumedusekontrast_steffi.jpg"
 
-              event-set__enter="_event: mouseenter; _target: #vilt; visible: true"
-              event-set__leave="_event: mouseleave; _target: #vilt; visible: false"
+              event-set__enter="_event: mouseenter; _target: #stef; visible: true"
+              event-set__leave="_event: mouseleave; _target: #stef; visible: false"
 
           ></a-plane>
         </Wall>
