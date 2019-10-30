@@ -1,0 +1,12 @@
+# Blender MTL File: 'l2bipaistevflubber.blend'
+# Material Count: 1
+
+newmtl Material
+Ns 900.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.001356 0.000000
+Ks 0.037037 0.037037 0.037037
+Ke 0.0 0.0 0.0
+Ni 5.050000
+d 1.000000
+illum 3

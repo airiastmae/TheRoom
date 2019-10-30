@@ -16,18 +16,29 @@ new Vue({
             <a-asset-item id="bulb" src="./assets/models/bulb.obj"></a-asset-item>
             <a-asset-item id="bulb-mtl" src="./assets/models/bulb.mtl"></a-asset-item>
 
-            <a-asset-item id="flubber" src="./assets/models/flubber.obj"></a-asset-item>
-            <a-asset-item id="flubber-mtl" src="./assets/models/flubber.mtl"></a-asset-item>
+            <a-asset-item id="flubber3" src="./assets/models/flubber3.obj"></a-asset-item>
+            <a-asset-item id="flubber3-mtl" src="./assets/models/flubber3.mtl"></a-asset-item>
 
             <a-asset-item id="easel" src="./assets/models/easel.obj"></a-asset-item>
             <a-asset-item id="easel-mtl" src="./assets/models/easel.mtl"></a-asset-item>
+
+            <a-asset-item id="putukas" src="./assets/models/putukas.obj"></a-asset-item>
+            <a-asset-item id="putukas-mtl" src="./assets/models/putukas.mtl"></a-asset-item>
                   
             </a-assets>
         </template>
 
-        <a-entity scale="0.5 0.5 0.5" position="0 0.5 0" material="transparent: true; metalness: 1" class="flubber" obj-model="obj: #flubber; mtl: #flubber-mtl "
-        animation="property: position; dir: alternate; loop: true; to: 0 2.5 0" event-set__enter="_event: mouseenter; _target: #flubber; visible: true"
-              event-set__leave="_event: mouseleave; _target: #flubber; visible: false">
+        <a-entity scale="0.5 0.5 0.5" position="0 1 0" class="flubber3" obj-model="obj: #flubber3; mtl: #flubber3-mtl "
+        animation="property: position; dir: alternate; loop: true; to: 0 1.5 0" event-set__enter="_event: mouseenter; _target: #flubber3; visible: true"
+              event-set__leave="_event: mouseleave; _target: #flubber3; visible: false">
+
+              <!--material="aplhaTest: 0.1" transparent="true" opacity="0.1" metalness="0.5" material="side: double; color: red" see k6ik ei t55ta-->
+        
+        </a-entity>
+
+        <a-entity scale="0.2 0.2 0.2" rotation="90 180 0" position="0.1 2.47 9.76" class="putukas" obj-model="obj: #putukas; mtl: #putukas-mtl "
+        animation="property: position; dir: alternate; loop: true; to: 0.1 1.5 9.76" event-set__enter="_event: mouseenter; _target: #putukas; visible: true"
+              event-set__leave="_event: mouseleave; _target: #putukas; visible: false">
         
         </a-entity>
 
@@ -38,32 +49,32 @@ new Vue({
         <Rig>
           <!-- Rig-i sisse võib panna asju, mis peaks liikuma koos kaameraga, märksõna HUD -->
           <!-- Hetkel on siin tekstid, mis muutuvad nähtavaks, kui vaatad õige asja peale -->
-          <a-text id="plakatitekst" value="Koopiamaal 'Affirmation II', akryyl" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="primary" value="Natyyrmort, primaarid+valge akryyl" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="sienna" value="Natyyrmort, ultramariin+burnt sienna" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="punane" value="Natyyrmort, monokroom punase akryyliga" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="sinine" value="Natyyrmort, monokroom sinise akryyliga" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="visand" value="Visand magavast vennast, akvarell" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="kuiv" value="Monokroom sinisega, kuiv akvarell" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="m2rg" value="Visand lilledest, m2rg akvarell" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="sega" value="Kompositsioon pea ja vaasiga, akvarell segatehnikas" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="pott" value="Visand lillepotist, pliiats" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="ymar" value="Joonistus ymaratest vormidest, pliiats" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="portr" value="Autoportree, visand pliiatsiga" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="vilt" value="Autoportree edasiarendus vildikaga" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="ini" value="Initsiaalid, tintenpen" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="tint" value="Joonistus, tintenpen" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="kuju" value="Vormi6petus, savifiguur" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="tont" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="apr" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="jim" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="semu" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="flint" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="hunt" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="reko" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="v2lk" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="stef" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
-          <a-text id="flubber" value="3D vorm" width="1" align="center" color="#FFF" visible="false" position="0 -0.05 -0.5" />
+          <a-text id="plakatitekst" value="Koopiamaal 'Affirmation II', akrüül" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="primary" value="Natyyrmort, primaarid+valge akryyl" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="sienna" value="Natyyrmort, ultramariin+burnt sienna" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="punane" value="Natyyrmort, monokroom punase akryyliga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="sinine" value="Natyyrmort, monokroom sinise akryyliga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="visand" value="Visand magavast vennast, akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="kuiv" value="Monokroom sinisega, kuiv akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="m2rg" value="Visand lilledest, m2rg akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="sega" value="Kompositsioon pea ja vaasiga, akvarell segatehnikas" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="pott" value="Visand lillepotist, pliiats" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="ymar" value="Joonistus ymaratest vormidest, pliiats" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="portr" value="Autoportree, visand pliiatsiga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="vilt" value="Autoportree edasiarendus vildikaga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="ini" value="Initsiaalid, tintenpen" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="tint" value="Joonistus, tintenpen" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="kuju" value="Vormi6petus, savifiguur" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="tont" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="apr" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="jim" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="semu" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="flint" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="hunt" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="reko" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="v2lk" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="stef" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="flubber" value="3D vorm" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
           
         </Rig>
         
