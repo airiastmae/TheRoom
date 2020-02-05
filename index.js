@@ -49,32 +49,33 @@ new Vue({
         <Rig>
           <!-- Rig-i sisse võib panna asju, mis peaks liikuma koos kaameraga, märksõna HUD -->
           <!-- Hetkel on siin tekstid, mis muutuvad nähtavaks, kui vaatad õige asja peale -->
-          <a-text id="plakatitekst" value="Koopiamaal 'Affirmation II', akrüül" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="primary" value="Natyyrmort, primaarid+valge akryyl" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="sienna" value="Natyyrmort, ultramariin+burnt sienna" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="punane" value="Natyyrmort, monokroom punase akryyliga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="sinine" value="Natyyrmort, monokroom sinise akryyliga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="visand" value="Visand magavast vennast, akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="kuiv" value="Monokroom sinisega, kuiv akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="m2rg" value="Visand lilledest, m2rg akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="sega" value="Kompositsioon pea ja vaasiga, akvarell segatehnikas" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="pott" value="Visand lillepotist, pliiats" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="ymar" value="Joonistus ymaratest vormidest, pliiats" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="portr" value="Autoportree, visand pliiatsiga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="vilt" value="Autoportree edasiarendus vildikaga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="ini" value="Initsiaalid, tintenpen" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="tint" value="Joonistus, tintenpen" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="kuju" value="Vormi6petus, savifiguur" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="tont" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="apr" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="jim" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="semu" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="flint" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="hunt" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="reko" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="v2lk" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="stef" value="V2rvi6petus, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
-          <a-text id="flubber" value="3D vorm" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
+          <a-text id="plakatitekst" value="Koopiamaal 'Affirmation II', akrüül" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="primary"      value="Natüürmort, primaarid,valge akrüül" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="sienna"       value="Natüürmort, ultramariin,põletatud sienna" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="punane"       value="Natüürmort, monokroom punase akrüüliga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="sinine"       value="Natüürmort, monokroom sinise akrüüliga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="visand"       value="Visand magavast vennast, akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="kuiv"         value="Monokroom sinisega, kuiv akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="m2rg"         value="Visand lilledest, märg akvarell" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="sega"         value="Kompositsioon pea ja vaasiga, akvarell segatehnikas" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="pott"         value="Visand lillepotist, pliiats" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="ymar"         value="Joonistus ümaratest vormidest, pliiats" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="portr"        value="Autoportree, visand pliiatsiga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="vilt"         value="Autoportree edasiarendus viltpliiatsiga" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="ini"          value="Initsiaalid, tintenpen" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="tint"         value="Joonistus, tintenpen" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="kuju"         value="Vormiõpetus, savifiguur" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="tont"         value="Värviõpetus, halliskaala, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="apr"          value="Värviõpetus, monokroom, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="jim"          value="Värviõpetus, analoogharmoonia, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="semu"         value="Värviõpetus, kolmikharmoonia, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="flint"        value="Värviõpetus, vastandharmoonia, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="hunt"         value="Värviõpetus, jagunevad vastandid, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="reko"         value="Värviõpetus, temperatuuri kontrast, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="v2lk"         value="Värviõpetus, kromaatiline kontrast, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="stef"         value="Värviõpetus, heletumeduse kontrast, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="rambo"         value="Värviõpetus, nelikharmoonia, digimaal" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" font="./assets/signika/Signika-SemiBold-msdf.json" negate="false"  align="center"/>
+          <a-text id="flubber"      value="3D vorm" width="1" align="center" color="#FFF" visible="false" scale="0.3 0.3 0.3" position="0 -0.05 -0.5" />
           
         </Rig>
         
