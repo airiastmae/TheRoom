@@ -312,7 +312,7 @@ new Vue({
         <Box position="1 1 0" shadow="cast: true" 
         
         />
-        <Floor position="0 0.01 0" />
+        <Floor position="0 0.01 4.85" />
         <a-entity environment="preset: starry; groundColor: black; grid: none; dressing: mushrooms; dressingColor: black; dressingVariance: 3 7 15; fog: 0.5;"></a-entity>
       </Scene>
     </Layout>
